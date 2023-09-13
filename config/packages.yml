@@ -11,6 +11,12 @@ install:
   - tmux
   - ulauncher
   - ripgrep
+  - alacritty
+  - nautilus-python
+  - nextcloud-client
+  - nextcloud-client-nautilus
+  - openssl
+  - python3-psutil
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
