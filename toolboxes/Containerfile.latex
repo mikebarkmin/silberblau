@@ -1,0 +1,9 @@
+FROM ghcr.io/mikebarkmin/fedora-toolbox:latest
+
+LABEL com.github.containers.toolbox="true" \
+      usage="This image is meant to be used with the toolbox or distrobox command" \
+      summary="A cloud-native terminal experience for LaTeX"
+
+RUN dnf -y upgrade && \
+    dnf -y install texlive-scheme-full && \
+    dnf clean all
