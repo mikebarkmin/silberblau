@@ -1,0 +1,30 @@
+FROM registry.fedoraproject.org/fedora-toolbox:38
+# From https://github.com/containers/toolbox/tree/main/images/fedora/f38
+
+LABEL com.github.containers.toolbox="true" \
+      usage="This image is meant to be used with the toolbox or distrobox command" \
+      summary="A cloud-native terminal experience powered by Fedora"
+
+# RPM FUSION
+RUN sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+RUN sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+COPY ./toolboxes/packages.fedora /toolbox-packages
+
+RUN dnf -y upgrade && \
+    dnf -y install $(<toolbox-packages) && \
+    dnf clean all
+
+RUN rm /toolbox-packages
+
+COPY ./toolboxes/packages.npm /npm-packages
+
+RUN npm install -g $(<npm-packages)
+
+RUN rm /npm-packages
+
+COPY ./toolboxes/packages.pip /pip-packages
+
+RUN pip install $(<pip-packages)
+
+RUN rm /pip-packages

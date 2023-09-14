@@ -1,4 +1,6 @@
+!include /usr/share/ublue-os/just/main.just
 !include /usr/share/ublue-os/just/bling.just
+!include /usr/share/ublue-os/just/nvidia.just
 
 # Assemble distrobox containers
 assemble:
@@ -8,10 +10,11 @@ assemble:
 # Install recommended GNOME extensions
 gnome-extensions:
   pip install --upgrade gnome-extensions-cli
-  gext install tailscale-status@maxgallup.github.com
+  gext install caffeine@patapon.info
   gext install nightthemeswitcher@romainvigier.fr
-  gext install pano@elhan.io
-  gext install weatheroclock@CleoMenezesJr.github.io
+  gext install bluetooth-quick-connect@bjarosze.gmail.com
+  gext install gsconnect@andyholmes.github.io
+  gext install emoji-selector@maestroschan.fr
 
 # Install JetBrains Toolbox | https://www.jetbrains.com/toolbox-app/
 jetbrains-toolbox:

@@ -1,25 +1,20 @@
 type: yafti # if included, https://github.com/ublue-os/yafti will be installed and set up
 custom-flatpaks: # this section is optional
-  - adw-gtk3 (GTK Theme): org.gtk.Gtk3theme.adw-gtk3-dark
-  - Pika Backup: org.gnome.World.PikaBackup
-  - Fedora Media Writer: org.fedoraproject.MediaWriter
-  - Flatseal (Permission Manager): com.github.tchx84.Flatseal
-  - Spot (GTK4 Spotify Client): dev.alextren.Spot
-  - Easy Effects: com.github.wwmm.easyeffects
+  - Authenticator: com.belmoussaoui.Authenticator
   - Blender (3D editor): org.blender.Blender
-  - Inkscape (SVG editor): org.inkscape.Inkscape
-  - Signal (Messenger): org.signal.Signal
-  - Pods (Graphical Podman Frontend): com.github.marhkb.Pods
   - Bottles: com.usebottles.bottles
   - Discord: com.discordapp.Discord
-  - Steam: com.valvesoftware.Steam
-  - Gamescope (Utility): org.freedesktop.Platform.VulkanLayer.gamescope
-  - MangoHUD (Utility): org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
-  - SteamTinkerLaunch (Utility): com.valvesoftware.Steam.Utility.steamtinkerlaunch
-  - Proton GE (Custom Proton Version): com.valvesoftware.Steam.CompatibilityTool.Proton-GE
-  - Obsidian: md.obsidian.Obsidian
-  - OBS Studio: com.obsproject.Studio
-  - VkCapture for OBS: com.obsproject.Studio.OBSVkCapture
-  - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
-  - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
+  - Easy Effects: com.github.wwmm.easyeffects
+  - Fedora Media Writer: org.fedoraproject.MediaWriter
+  - Flatseal (Permission Manager): com.github.tchx84.Flatseal
+  - Inkscape (SVG editor): org.inkscape.Inkscape
+  - Pika Backup: org.gnome.World.PikaBackup
+  - Pods (Graphical Podman Frontend): com.github.marhkb.Pods
+  - Proton Bridge: ch.protonmail.protonmail-bridge
+  - Signal (Messenger): org.signal.Signal
+  - Audacity: org.audacityteam.Audacity
+  - Kdenlive: org.kde.kdenlive
+  - GeoGebra: org.geogebra.GeoGebra
+  - Spotify: com.spotify.Client
   - Zotero: org.zotero.Zotero
+  - adw-gtk3 (GTK Theme): org.gtk.Gtk3theme.adw-gtk3-dark
