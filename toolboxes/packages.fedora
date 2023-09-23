@@ -1,11 +1,13 @@
 dnf-plugins-core
 gcc
+gcc-c++
 neovim
 zsh
 ripgrep
 tmux
 stow
 git-crypt
+git-lfs
 sqlite
 fzf
 ffmpeg
