@@ -11,11 +11,6 @@ git-lfs
 sqlite
 fzf
 ffmpeg
-ffmpeg-libs
-gstreamer1-libav
-gstreamer1-vaapi
-gstreamer1-plugins-bad-free
-gstreamer1-plugin-libav
 nodejs
 yarnpkg
 python3
@@ -28,4 +23,3 @@ perl-autodie
 google-noto-emoji-color-fonts
 mozilla-fira-mono-fonts
 mozilla-fira-sans-fonts
-uxplay
