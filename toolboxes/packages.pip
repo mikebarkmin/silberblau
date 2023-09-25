@@ -4,5 +4,3 @@ qmk
 black
 mypy
 pynvim
-manim
-manim-voiceover[all]
