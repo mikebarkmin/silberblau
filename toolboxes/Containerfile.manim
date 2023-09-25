@@ -15,9 +15,6 @@ RUN apt-get update \
     curl \
     rubberband-cli
 
-# Copy requirements.txt
-COPY ./docker/requirements.txt /tmp/requirements.txt
-
 # Install dependencies by running the install script
 COPY ./toolboxes/packages.manim /pip-packages
 
