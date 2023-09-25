@@ -1,6 +1,8 @@
+poetry
 uncommitted
 qmk
 pyls-flake8
 pylsp-mypy
 pyls-isort
 pynvim
+manim
