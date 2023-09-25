@@ -13,6 +13,7 @@ RUN apt-get update \
     xdg-utils \
     vlc \
     curl \
+    sox \
     portaudio19-dev
 
 # Install dependencies by running the install script
