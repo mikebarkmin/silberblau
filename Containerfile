@@ -21,10 +21,6 @@ ARG RECIPE=recipe.yml
 ARG IMAGE_REGISTRY=ghcr.io/ublue-os
 
 
-# add repos
-COPY etc/yum.repos.d/ /etc/yum.repos.d/
-
-
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
 
 # Copy the bling from ublue-os/bling into tmp, to be installed later by the bling module
