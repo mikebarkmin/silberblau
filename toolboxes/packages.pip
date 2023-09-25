@@ -1,8 +1,8 @@
 poetry
 uncommitted
 qmk
-pyls-flake8
-pylsp-mypy
-pyls-isort
+black
+mypy
 pynvim
 manim
+manim-voiceover[all]

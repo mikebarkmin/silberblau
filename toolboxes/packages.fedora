@@ -15,6 +15,9 @@ nodejs
 yarnpkg
 python3
 python3-pip
+python3-devel
+pango-devel
+cairo-devel
 java-latest-openjdk
 java-latest-openjdk-jmods
 openjfx
@@ -23,3 +26,5 @@ perl-autodie
 google-noto-emoji-color-fonts
 mozilla-fira-mono-fonts
 mozilla-fira-sans-fonts
+portaudio
+portaudio-devel
