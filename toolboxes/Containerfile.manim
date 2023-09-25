@@ -18,7 +18,7 @@ RUN apt-get update \
 # Install dependencies by running the install script
 COPY ./toolboxes/packages.manim /pip-packages
 
-RUN pip install $(<pip-packages)
+RUN pip install -r /pip-packages
 
 RUN rm /pip-packages
 
