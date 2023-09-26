@@ -24,7 +24,7 @@ install:
   - nextcloud-client-nautilus
   - openssl
   - python3-psutil
-  - gnome-console
+  - blackbox-terminal
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
