@@ -1,5 +1,6 @@
 type: yafti # if included, https://github.com/ublue-os/yafti will be installed and set up
 custom-flatpaks: # this section is optional
+  - Audacity: org.audacityteam.Audacity
   - Authenticator: com.belmoussaoui.Authenticator
   - Blender (3D editor): org.blender.Blender
   - Bottles: com.usebottles.bottles
@@ -7,14 +8,14 @@ custom-flatpaks: # this section is optional
   - Easy Effects: com.github.wwmm.easyeffects
   - Fedora Media Writer: org.fedoraproject.MediaWriter
   - Flatseal (Permission Manager): com.github.tchx84.Flatseal
+  - GTD: org.gnome.GTG
+  - GeoGebra: org.geogebra.GeoGebra
   - Inkscape (SVG editor): org.inkscape.Inkscape
+  - Kdenlive: org.kde.kdenlive
   - Pika Backup: org.gnome.World.PikaBackup
   - Pods (Graphical Podman Frontend): com.github.marhkb.Pods
   - Proton Bridge: ch.protonmail.protonmail-bridge
   - Signal (Messenger): org.signal.Signal
-  - Audacity: org.audacityteam.Audacity
-  - Kdenlive: org.kde.kdenlive
-  - GeoGebra: org.geogebra.GeoGebra
   - Spotify: com.spotify.Client
   - Zotero: org.zotero.Zotero
   - adw-gtk3 (GTK Theme): org.gtk.Gtk3theme.adw-gtk3-dark
