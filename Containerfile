@@ -37,10 +37,9 @@ COPY config /tmp/config/
 # Copy addtional repos
 COPY etc/yum.repos.d/ /etc/yum.repos.d/
 
-# Set up docker
+# Set up docker-compose
 RUN wget https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -O /tmp/docker-compose && \
     install -c -m 0755 /tmp/docker-compose /usr/bin
-RUN systemctl enable docker
 
 # Copy modules
 # The default modules are inside ublue-os/bling

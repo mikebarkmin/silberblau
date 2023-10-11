@@ -16,6 +16,11 @@ gnome-extensions:
   gext install gsconnect@andyholmes.github.io
   gext install emoji-selector@maestroschan.fr
 
+docker:
+  sudo systemctl enable --now docker
+  sudo usermod -aG docker $USER
+  newgrp docker
+
 # Install JetBrains Toolbox | https://www.jetbrains.com/toolbox-app/
 jetbrains-toolbox:
   #!/usr/bin/env bash
