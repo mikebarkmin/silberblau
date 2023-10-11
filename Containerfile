@@ -32,6 +32,9 @@ COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
 COPY build.sh /tmp/build.sh
 COPY config /tmp/config/
 
+# Copy addtional repos
+COPY etc/yum.repos.d/ /etc/yum.repos.d/
+
 # Copy modules
 # The default modules are inside ublue-os/bling
 COPY --from=ghcr.io/ublue-os/bling:latest /modules /tmp/modules/
