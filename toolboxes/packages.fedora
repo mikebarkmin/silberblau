@@ -13,10 +13,9 @@ fzf
 ffmpeg
 nodejs
 yarnpkg
-python3
-python3-pip
-python3-devel
-conda
+python
+python-pip
+python-devel
 pango-devel
 cairo-devel
 java-latest-openjdk
