@@ -6,6 +6,8 @@ install:
   - fzf
   - git-crypt
   - git-lfs
+  - gcc
+  - gcc-c++
   - neovim
   - simple-scan
   - stow
@@ -24,6 +26,11 @@ install:
   - nextcloud-client-nautilus
   - openssl
   - python3-psutil
+  - google-noto-emoji-color-fonts
+  - mozilla-fira-mono-fonts
+  - mozilla-fira-sans-fonts
+  - nodejs
+  - poetry
   - blackbox-terminal
   - gnome-console
 remove:
