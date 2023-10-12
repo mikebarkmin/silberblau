@@ -39,3 +39,4 @@ remove:
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
   - gnome-terminal
   - gnome-terminal-nautilus
+  - gnome-software
