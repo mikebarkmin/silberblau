@@ -20,6 +20,7 @@ pango-devel
 cairo-devel
 java-latest-openjdk
 java-latest-openjdk-jmods
+maven
 openjfx
 perl-CGI
 perl-autodie
