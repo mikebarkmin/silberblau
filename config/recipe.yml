@@ -10,7 +10,6 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # list of modules, executed in order
 # you can include multiple instances of the same module
 modules:
-
   - type: files
     files:
       - usr: /usr # copy static configurations
@@ -24,6 +23,7 @@ modules:
 
   - type: script
     scripts:
-      # this sets up the proper policy & signing files for signed images to work
       - fetch-rpms.sh
+      - post-install.sh
+      # this sets up the proper policy & signing files for signed images to work
       - signing.sh
