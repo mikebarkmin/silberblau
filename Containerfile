@@ -9,7 +9,7 @@
 # does nothing if the image is built in the cloud.
 
 # !! Warning: changing these might not do anything for you. Read comment above.
-ARG IMAGE_MAJOR_VERSION=39
+ARG IMAGE_MAJOR_VERSION=38
 ARG BASE_IMAGE_URL=ghcr.io/ublue-os/silverblue-main
 
 FROM ${BASE_IMAGE_URL}:${IMAGE_MAJOR_VERSION}
@@ -20,6 +20,8 @@ ARG RECIPE=recipe.yml
 # The default image registry to write to policy.json and cosign.yaml
 ARG IMAGE_REGISTRY=ghcr.io/ublue-os
 
+# Apply IP Forwarding before installing Docker to prevent messing with LXC networking
+RUN sysctl -p
 
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
 
@@ -31,6 +33,13 @@ COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
 # Copy build scripts & configuration
 COPY build.sh /tmp/build.sh
 COPY config /tmp/config/
+
+# Copy addtional repos
+COPY etc/yum.repos.d/ /etc/yum.repos.d/
+
+# Set up docker-compose
+RUN wget https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -O /tmp/docker-compose && \
+    install -c -m 0755 /tmp/docker-compose /usr/bin
 
 # Copy modules
 # The default modules are inside ublue-os/bling
