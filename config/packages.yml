@@ -26,6 +26,7 @@ install:
   - nextcloud-client-nautilus
   - openssl
   - python3-psutil
+  - python-unversioned-command
   - google-noto-emoji-color-fonts
   - mozilla-fira-mono-fonts
   - mozilla-fira-sans-fonts

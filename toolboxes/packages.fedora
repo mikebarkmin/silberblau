@@ -16,6 +16,7 @@ yarnpkg
 python
 python-pip
 python-devel
+python-unversioned-command
 pango-devel
 cairo-devel
 java-latest-openjdk
