@@ -38,6 +38,7 @@ install:
   - podman-tui
   - podmansh
   - podman-compose
+  - devpod
   - code
   - containerd.io
   - docker-ce
