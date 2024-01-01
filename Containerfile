@@ -28,8 +28,6 @@ COPY cosign.pub /usr/share/ublue-os/cosign.pub
 COPY --from=ghcr.io/ublue-os/bling:latest /rpms /tmp/bling/rpms
 COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
 
-RUN wget https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-"${FEDORA_MAJOR_VERSION}"/ublue-os-staging-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/ublue-os-staging-fedora-"${FEDORA_MAJOR_VERSION}".repo
-
 # Copy build scripts & configuration
 COPY etc/yum.repos.d/ /etc/yum.repos.d/
 COPY build.sh /tmp/build.sh
