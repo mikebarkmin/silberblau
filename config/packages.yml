@@ -54,5 +54,4 @@ remove:
   - gnome-terminal-nautilus
   - gnome-software
   - gnome-tour
-  - gnome-extensions-app
   - gnome-software-rpm-ostree
