@@ -34,12 +34,25 @@ install:
   - poetry
   - luarocks
   - blackbox-terminal
+  - podman-plugins
+  - podmna-tui
+  - podmansh
   - podman-compose
-  - podman-docker
+  - code
+  - containerd.io
+  - docker-ce
+  - docker-ce-cli
+  - docker-buildx-plugin
+  - docker-compose-plugin
+  - gnome-shell-extension-appindicator
+  - gnome-shell-extension-caffeine
+  - gnome-shell-extension-gsconnect
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
   - gnome-terminal
   - gnome-terminal-nautilus
   - gnome-software
+  - gnome-tour
+  - gnome-extensions-app
   - gnome-software-rpm-ostree

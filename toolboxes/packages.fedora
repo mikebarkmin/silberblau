@@ -25,11 +25,7 @@ maven
 openjfx
 perl-CGI
 perl-autodie
-google-noto-emoji-color-fonts
-mozilla-fira-mono-fonts
-mozilla-fira-sans-fonts
 portaudio
 portaudio-devel
 sox
-codium
 luarocks
