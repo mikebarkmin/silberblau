@@ -35,7 +35,7 @@ install:
   - luarocks
   - blackbox-terminal
   - podman-plugins
-  - podmna-tui
+  - podman-tui
   - podmansh
   - podman-compose
   - code
