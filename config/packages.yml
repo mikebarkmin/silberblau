@@ -34,6 +34,8 @@ install:
   - nodejs
   - poetry
   - luarocks
+  - java-latest-openjdk
+  - maven
   - blackbox-terminal
   - podman-plugins
   - podman-tui
