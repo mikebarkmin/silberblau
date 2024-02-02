@@ -18,7 +18,6 @@ modules:
                   # read more in the files module's README
 
   - from-file: packages.yml
-  - from-file: bling.yml
   - from-file: yafti.yml
 
   - type: script
