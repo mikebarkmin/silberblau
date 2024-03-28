@@ -40,7 +40,6 @@ install:
   - java-latest-openjdk
   - maven
   - blackbox-terminal
-  - podman-plugins
   - podman-tui
   - podmansh
   - podman-compose
