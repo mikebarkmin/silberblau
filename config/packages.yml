@@ -41,7 +41,6 @@ install:
   - maven
   - blackbox-terminal
   - podman-tui
-  - podmansh
   - podman-compose
   - devpod
   - code
