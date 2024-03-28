@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:39
+FROM registry.fedoraproject.org/fedora-toolbox:40
 # From https://github.com/containers/toolbox/tree/main/images/fedora/f38
 
 LABEL com.github.containers.toolbox="true" \
